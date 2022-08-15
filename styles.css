@@ -1,0 +1,42 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+:root{
+    --main-color : rgb(224, 75, 100);
+    --font-heading: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --heading-size: 40px;
+    --font-color: whitesmoke;
+}
+section{
+    height: 90vh;
+    background-color: var(--main-color);
+}
+.section-1 .logo{
+    color: aliceblue;
+    font-family: var(--font-heading);
+    font-size: var(--heading-size);
+}
+.banner{
+    width: 100%;
+    color: var(--font-color);
+}
+.banner img{
+    width: 20vw;
+    transform: rotate(10deg);
+    overflow: hidden;
+}
+.banner .first-banner{
+    text-align: center;
+}
+@media only screen and (max-width : 992px) {
+    .second-banner img{
+        transform: rotate(0deg);
+        height:100%;   
+        width: 50vw;
+    }
+    .second-banner{
+        text-align: center;
+        overflow:hidden;
+    }
+}
